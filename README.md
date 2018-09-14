@@ -6,5 +6,12 @@ Sahil Shah sahil.shah@u.northwestern.edu
 
 README Last updated: Thursday 9/13/18
 
-### Description 
+### Datasets 
+
+- NBA Spreads Data: 
+
+    - data/ csv
+    - output / : Scrubbed data 
+
+
  

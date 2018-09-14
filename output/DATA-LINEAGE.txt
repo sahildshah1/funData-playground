@@ -1,0 +1,20 @@
+
+## Last updates: 09/14/18
+
+##Description
+For every data file in the "output" directory describe it's lineage with the 
+files (sequence of steps) and raw data in the "data" directory that generated it
+
+-----------------------------------------------------------------------------------
+
+
+
+- scrubbed_nbaSpreads.pkl
+    Files (Sequence of steps)
+        - Saved data frame as pickle (pandas.DataFrame.to_pickle) and can read back 
+          using pd.read_pickle(file_name); Read more about pickling at #https://ianlondon.github.io/blog/pickling-basics/
+
+        - save-scrubbed-nbaSpreads.py 
+
+    Raw data:
+        - data/nba-against-the-spread.csv
