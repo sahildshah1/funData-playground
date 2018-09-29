@@ -66,10 +66,18 @@ temp_dataframe = scrubbed_dataframe.iloc[:,1:].apply(pd.to_numeric)/82
 
 scrubbed_dataframe.iloc[:,1:] = temp_dataframe
 
+
+# Convert to numeric  https://stackoverflow.com/questions/15891038/change-data-type-of-columns-in-pandas
+
+# errors = ignore ignores converting to numeric if invalid value is encountered 
+
+df2 = scrubbed_dataframe.apply(pd.to_numeric, 
+                               errors='ignore')
+
+
 # Save dataframe as a pickle 
 
-scrubbed_nbaSpreads = scrubbed_dataframe
-
+scrubbed_nbaSpreads = df2
 
 scrubbed_nbaSpreads.to_pickle("./scrubbed_nbaSpreads.pkl")  
 
